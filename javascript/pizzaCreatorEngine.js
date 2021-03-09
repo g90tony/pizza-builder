@@ -83,4 +83,14 @@ function Pizza() {
   this.sizeMultiplier = 0; //size multiplier for pizza extras i.e toppings and bases
   this.selectedToppings = []; //keeps track of the selected toppings
   this.cart = {}; //keeps track of the pizzas ingredients and price for each
+
+  //   @type: private method
+  //   @description: adds size item into the cart and updated total
+  const billPizzaSize = (item) => {
+    const subtotal = item.price;
+    this.sizeMultiplier = item.multiplier;
+    this.cart.size = { name: "Large Pizza", subtotal };
+    this.total = subtotal;
+    this.cart.total = this.total;
+  };
 }

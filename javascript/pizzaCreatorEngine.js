@@ -140,4 +140,15 @@ function Pizza() {
       }
     });
   };
+
+  // @type: private method
+  // @description: triggers the addPizzaSizeToBill private function
+  this.addPizzaSizeToBill = (sizeName) => {
+    sizes.forEach((size) => {
+      if (size.name == sizeName) {
+        billPizzaSize(size);
+        console.log(`You've selected a ${sizeName} sized pizza`, this.cart);
+      }
+    });
+  };
 }

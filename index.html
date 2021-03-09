@@ -6,5 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Builder</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 
+    Landing Section
+    @description: This is will be the first screen that the user will see when the page loads
+    @action: clicking on the button with the id "starting button will load the next screen"
+    -->
+    <section id="landing">
+      <div class="container">
+        <div class="row flex-wrap justify-content-center d-flex">
+          <div class="col image-container">
+            <img src="images/LandingImage.png" alt="landing" width="100%" />
+          </div>
+          <div class="col text-container">
+            <p class="landing-heading">
+              Welcome to <br />
+              <span>Pizza Builder</span>
+            </p>
+            <p class="landing-body">
+              On a sole mission to satisfy all pizza cravings
+              <span>one life at a time.</span> Start building your dream pizza
+              by scrolling to the first step
+            </p>
+            <div class="row flex-wrap">
+              <button id="startingButton" class="btn landing-button">
+                Click here to start
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

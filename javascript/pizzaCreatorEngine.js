@@ -129,4 +129,15 @@ function Pizza() {
 
     console.log("Toppings have been added to the bill", this.cart);
   };
+
+  // @type: private method
+  // @description: triggers the billPizzaBase private function
+  this.addBaseToBill = (selectedBase) => {
+    bases.forEach((base) => {
+      if (base.name === selectedBase) {
+        billPizzaBase(base);
+        console.log(` ${base.name} has been added to the cart`, this.cart);
+      }
+    });
+  };
 }

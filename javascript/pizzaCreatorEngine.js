@@ -111,4 +111,14 @@ function Pizza() {
 
     this.cart.toppings = toppings;
   };
+
+  // @type: private method
+  // @description: add selected base and adds into into the cart as well as calculate their price
+  //               (unitPrice*sizeMultiplier) and updates total
+  const billPizzaBase = (item) => {
+    const subtotal = item.price * this.sizeMultiplier;
+
+    this.cart.base = { name: item.name, subtotal };
+    this.total = this.total + subtotal;
+  };
 }

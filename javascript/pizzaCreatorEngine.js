@@ -93,4 +93,22 @@ function Pizza() {
     this.total = subtotal;
     this.cart.total = this.total;
   };
+
+  // @type: private method
+  // @description: loops through selected topping items and adds them into the cart as well as calculate their price
+  //               (unitPrice*sizeMultiplier) and updates total
+  const billPizzaToppings = () => {
+    let toppings = [];
+    this.selectedToppings.map((item) => {
+      const subtotal = item.price * this.sizeMultiplier;
+      console.log(subtotal);
+      const newItem = { name: item.name, subtotal };
+      toppings.push(newItem);
+
+      this.total = this.total + subtotal;
+      this.cart.total = this.total;
+    });
+
+    this.cart.toppings = toppings;
+  };
 }

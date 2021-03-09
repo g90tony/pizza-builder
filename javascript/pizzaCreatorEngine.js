@@ -151,4 +151,15 @@ function Pizza() {
       }
     });
   };
+
+  // @type: private method
+  // @description: loads selected toppings from UI to the private attribute selectedToppings
+  this.addToppingsToList = (toppingName) => {
+    toppings.forEach((topping) => {
+      if (topping.name == toppingName) {
+        this.selectedToppings.push(topping);
+        console.log(`You've added ${topping.name} to the pizza.`, topping);
+      }
+    });
+  };
 }

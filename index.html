@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- 
-    Landing Section
+    @name: Landing Section
     @description: This is will be the first screen that the user will see when the page loads
     @action: clicking on the button with the id "starting button will load the next screen"
     -->
@@ -35,6 +35,143 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 
+    @name: Select Size Section
+    @description: This is will be the second screen that the user will see after the page loads
+    @action: clicking on the card button will add the selected card size into the cart, 
+             clicking on the button with the id "loadStep2" when load the next page
+             clicking on the button with the id "backToStart" will load the previous screen
+
+    -->
+    <section id="stepOne" class="my-5">
+      <div class="container">
+        <p class="step-one-heading">
+          Select Pizza Size<br />
+          <span
+            >Select the pizza size you would like. To move on to the next step,
+            click next at the bottom of the page</span
+          >
+        </p>
+        <div class="d-flex row flex-wrap justify-content-center">
+          <div
+            id="megaPizza"
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Pizza.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Mega Pizza</p>
+              <p class="stepOne-price">Price: <span>1,750ksh</span></p>
+              <p class="stepOne-price">Slices: <span>12</span></p>
+              <button
+                class="btn steOne-button w-100"
+                onclick="pizzaSizeBiller('Mega')"
+                id="mega-pizza"
+              >
+                Mega
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="largePizza"
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Pizza.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Large Pizza</p>
+              <p class="stepOne-price">Price: <span> 1,000ksh</span></p>
+              <p class="stepOne-price">Slices: <span>8</span></p>
+              <button
+                class="btn steOne-button w-100"
+                onclick="pizzaSizeBiller('Large')"
+                id="large-pizza"
+              >
+                Large
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="mediumPizza"
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Pizza.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Medium Pizza</p>
+
+              <p class="stepOne-price">Price: <span>700ksh</span></p>
+              <p class="stepOne-price">Slices: <span>6</span></p>
+              <button
+                class="btn steOne-button w-100"
+                onclick="pizzaSizeBiller('Medium')"
+                id="medium-pizza"
+              >
+                Medium
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="smallPizza"
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Pizza.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Small Pizza</p>
+              <p class="stepOne-price">Price: <span>300ksh</span></p>
+              <p class="stepOne-price">Slices:<span>5</span></p>
+              <button
+                class="btn steOne-button w-100"
+                onclick="pizzaSizeBiller('Small')"
+                id="small-pizza"
+              >
+                Small
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-wrap mx-5 fixed-bottom mb-3">
+        <button
+          id="backToStart"
+          class="btn w-auto mx-2 btn-warning text-white font-weight-bolder"
+        >
+          Go Back
+        </button>
+        <button id="loadStep2" class="btn w-auto mx-2 btn-light disabled">
+          Next
+        </button>
       </div>
     </section>
   </body>

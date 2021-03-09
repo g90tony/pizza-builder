@@ -121,4 +121,12 @@ function Pizza() {
     this.cart.base = { name: item.name, subtotal };
     this.total = this.total + subtotal;
   };
+
+  // @type: public method
+  // @description: triggers the billToppingsToBill private function
+  this.addToppingsToBill = () => {
+    billPizzaToppings();
+
+    console.log("Toppings have been added to the bill", this.cart);
+  };
 }

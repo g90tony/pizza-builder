@@ -2,7 +2,7 @@ function generateInvoice(cart) {
   const generateInvoiceItem = (item) => {
     const itemHTML = document.createElement("p");
     itemHTML.innerText = item;
-    itemHTML.setAttribute("class", "my-auto stepOne-price text-white");
+    itemHTML.setAttribute("class", "my-auto step-price text-white");
 
     return itemHTML;
   };

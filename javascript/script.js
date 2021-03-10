@@ -11,3 +11,14 @@ const pizzaToppingsAdder = (topping) => {
 const pizzaToppingsBiller = () => {
   newPizza.addToppingsToBill();
 };
+
+const pizzaBaseBiller = (base) => {
+  newPizza.addBaseToBill(base);
+};
+
+const createInvoice = () => {
+  const cart = newPizza.cart;
+  generateInvoice(cart);
+
+  document.getElementById("grandtotal").innerText = `${newPizza.total}`;
+};

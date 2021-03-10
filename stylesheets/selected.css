@@ -1,0 +1,19 @@
+.selected {
+  background-color: green;
+  border-color: yellowgreen;
+}
+
+.selected:hover {
+  background-color: yellowgreen !important;
+  border-color: green !important;
+}
+
+.selected:hover button {
+  background-color: white !important;
+  color: greenyellow !important;
+}
+
+.selected button {
+  background-color: yellowgreen;
+  color: #f7f7f7;
+}

@@ -1,0 +1,87 @@
+.step-size {
+  font-weight: 900;
+  font-size: 18px;
+  color: #f7f7f7;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.step-price {
+  font-weight: 700;
+  font-size: 14px;
+
+  color: #030611;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.step-price span {
+  color: #f7f7f7;
+}
+
+.step-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e2ac09;
+  line-height: 20px;
+}
+
+.step-heading span {
+  color: #f7f7f7;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.steOne-button {
+  background-color: #f7f7f7;
+  color: #e2ac09;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.steOne-button:hover {
+  background-color: #030611;
+  color: #f7f7f7;
+}
+
+.step-size-card {
+  border: 1px solid #e2ac09;
+  background-color: #e2ac09;
+  border-radius: 15px !important;
+  width: 250px;
+}
+
+.step-payment-card {
+  border: 1px solid #e2ac09;
+  background-color: #e2ac09;
+  border-radius: 15px !important;
+  width: 250px;
+}
+
+.step-size-card:hover {
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+}
+
+.step-size-card:hover .step-size {
+  color: #e2ac09;
+}
+
+.step-size-card:hover .steOne-button {
+  background-color: #e2ac09;
+  color: #f7f7f7;
+}
+.step-size-card:hover .steOne-button:hover {
+  background-color: #030611;
+  color: #f7f7f7;
+}
+.step-size-card:hover .step-price span {
+  color: #e2ac09;
+}
+
+@media screen and (max-width: 390px) {
+  .step-size-card {
+    width: 200px;
+  }
+}

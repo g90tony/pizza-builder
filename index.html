@@ -188,5 +188,200 @@
         </button>
       </div>
     </section>
+
+
+    <!-- 
+    @name: Select Toppings Section
+    @description: This is will be the third screen that the user will see after the page loads
+    @action: clicking on the card button will add the selected card size into the cart, 
+             clicking on the button with the id "loadStep3" when load the next page
+             clicking on the button with the id "backtoStep1" will load the previous screen
+
+    -->    
+    <section id="stepTwo" class="my-5">
+      <div class="container">
+        <p class="step-one-heading">
+          Add Pizza Toppings:<br />
+          <span>  <span
+            >Select as many toppings you would like. To move on to the next step,
+            click next at the bottom of the page</span</span>
+        </p>
+
+        <div class="d-flex row flex-wrap justify-content-center">
+          <div
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+            id="toppings-item-ham"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Ham</p>
+              <p class="stepOne-price">Price: <span>200ksh</span></p>
+
+              <button
+                id="hamTopping"
+                onclick="pizzaToppingsAdder('Ham')"
+                class="btn steOne-button w-100"
+              >
+                Add Ham
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card my-2 step-one-size-card p-2 toppings-item rounded mx-2"
+            id="toppings-item-bacon"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Bacon</p>
+              <p class="stepOne-price">Price: <span>250ksh</span></p>
+
+              <button
+                id="baconTopping"
+                onclick="pizzaToppingsAdder('Bacon')"
+                class="btn steOne-button w-100"
+              >
+                Add Bacon
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card my-2 step-one-size-card p-2 toppings-item rounded mx-2"
+            id="toppings-item-cheese"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Extra Cheese</p>
+              <p class="stepOne-price">Price: <span>100ksh</span></p>
+
+              <button
+                id="cheeseTopping"
+                onclick="pizzaToppingsAdder('Cheese')"
+                class="btn steOne-button w-100"
+              >
+                Add Extra Cheese
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card my-2 step-one-size-card p-2 toppings-item rounded mx-2"
+            id="toppings-item-olives"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Olives</p>
+              <p class="stepOne-price">Price: <span>300ksh</span></p>
+
+              <button
+                id="olivesTopping"
+                onclick="pizzaToppingsAdder('Olives')"
+                class="btn steOne-button w-100"
+              >
+                Add Olives
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card my-2 step-one-size-card p-2 toppings-item rounded mx-2"
+            id="toppings-item-pepperbells"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Green Pepper Bells</p>
+              <p class="stepOne-price">Price: <span>75ksh</span></p>
+
+              <button
+                id="greenPepperBells"
+                onclick="pizzaToppingsAdder('Green Pepper Bells')"
+                class="btn steOne-button w-100"
+              >
+                Add Pepper Bells
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="toppings-item-pineapples"
+            class="card my-2 step-one-size-card p-2 toppings-item rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/Toppings.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Pineapples</p>
+              <p class="stepOne-price">Price: <span>125ksh</span></p>
+
+              <button
+                id="pineappleTopping"
+                onclick="pizzaToppingsAdder('Pineapples')"
+                class="btn steOne-button w-100"
+              >
+                Add Pineapples
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-wrap mx-5 fixed-bottom mb-3">
+        <button
+          id="backToStep1"
+          class="btn w-auto mx-2 btn-warning text-white font-weight-bolder"
+        >
+          Go Back
+        </button>
+        <button
+          id="loadStep3"
+          onclick="pizzaToppingsBiller()"
+          class="btn w-auto mx-2 btn-light disabled"
+        >
+          Next
+        </button>
+      </div>
+    </section>
+
+    
   </body>
 </html>

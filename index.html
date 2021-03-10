@@ -381,7 +381,92 @@
         </button>
       </div>
     </section>
+  <!-- 
+    @name: Select Toppings Section
+    @description: This is will be the third screen that the user will see after the page loads
+    @action: clicking on the card button will add the selected card size into the cart, 
+             clicking on the button with the id "loadStep3" when load the next page
+             clicking on the button with the id "backtoStep1" will load the previous screen
 
-    
+    -->    
+     <section id="stepThree" class="my-5">
+      <div class="container">
+        <p class="step-one-heading">
+          Select Pizza Base Type:<br />
+          <span>  <span
+            >Select the pizza base you would like between shallow and deep pan-base. To move on to the next step,
+            click next at the bottom of the page</span</span>
+        </p>
+        <div class="d-flex row flex-wrap justify-content-center">
+          <div
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+            id="shallow-dish"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/PizzaDough.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Shallow Dish</p>
+              <p class="stepOne-price">Price: <span>100ksh</span></p>
+
+              <button
+                id="shallowDish"
+                onclick="pizzaBaseBiller('Shallow')"
+                class="btn steOne-button w-100"
+              >
+                Select Shallow Dish
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="deep-dish"
+            class="card my-2 step-one-size-card p-2 rounded mx-2"
+          >
+            <div class="justify-content-center d-flex align-items-center">
+              <img
+                src="images/PizzaDough.png"
+                width="50%"
+                class="my-auto mx-auto"
+                alt=""
+              />
+            </div>
+            <div class="col my-auto">
+              <p class="stepOne-size">Deep Pan</p>
+              <p class="stepOne-price">Price: <span>150ksh</span></p>
+
+              <button
+                id="deepDish"
+                onclick="pizzaBaseBiller('Deep')"
+                class="btn steOne-button w-100"
+              >
+                Deep ish
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-wrap mx-5 fixed-bottom mb-3">
+        <button
+          id="backToStep2"
+          class="btn w-auto mx-2 btn-warning text-white font-weight-bolder"
+        >
+          Go Back
+        </button>
+        <button
+          id="loadPayment"
+          onclick="createInvoice()"
+          class="btn w-auto mx-2 btn-light disabled"
+        >
+          Proceed to Pay
+        </button>
+      </div>
+    </section>
+
   </body>
 </html>

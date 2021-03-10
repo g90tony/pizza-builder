@@ -194,7 +194,7 @@
     @name: Select Toppings Section
     @description: This is will be the third screen that the user will see after the page loads
     @action: clicking on the card button will add the selected card size into the cart, 
-             clicking on the button with the id "loadStep3" when load the next page
+             clicking on the button with the id "loadStep2" when load the next page
              clicking on the button with the id "backtoStep1" will load the previous screen
 
     -->    
@@ -382,11 +382,11 @@
       </div>
     </section>
   <!-- 
-    @name: Select Toppings Section
-    @description: This is will be the third screen that the user will see after the page loads
+    @name: Select Base Section
+    @description: This is will be the forth screen that the user will see after the page loads
     @action: clicking on the card button will add the selected card size into the cart, 
-             clicking on the button with the id "loadStep3" when load the next page
-             clicking on the button with the id "backtoStep1" will load the previous screen
+             clicking on the button with the id "loadPayment" when load the next page
+             clicking on the button with the id "backtoStep2" will load the previous screen
 
     -->    
      <section id="stepThree" class="my-5">
@@ -465,6 +465,83 @@
         >
           Proceed to Pay
         </button>
+      </div>
+    </section>
+
+      <!-- 
+    @name: Incoice Section
+    @description: This is will be the forth screen that the user will see after the page loads
+    @action: clicking on the card button will add the selected card size into the cart, 
+             clicking on the button with the id "loadStart" when load the next page
+             clicking on the button with the id "backtoStep3" will load the previous screen
+
+    -->    
+     <section id="paymentStep" class="my-5">
+      <div class="container">
+        <p class="step-one-heading">
+          Final Step:<br />
+          <span>Select Pizza base</span>
+        </p>
+        <div class="d-flex row flex-wrap justify-content-center">
+          <div class="justify-content-center d-flex align-items-center">
+            <h3 class="text-center text-white">Invoice</h3>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="h6 text-white font-weight-bold">Pizza Size <br /></p>
+              <div class="col" id="pizzaSizeNameContainer"></div>
+            </div>
+            <div class="col">
+              <div class="col" id="pizzaSizeAmountContainer"></div>
+            </div>
+          </div>
+          <div class="row"><hr class="w-50 mx-auto" /></div>
+
+          <div class="row">
+            <div class="col">
+              <p class="h6 text-white font-weight-bold">Pizza Base</p>
+              <div class="col" id="pizzaBaseNameContainer"></div>
+            </div>
+            <div class="col">
+              <div class="col" id="pizzaBaseAmountContainer"></div>
+            </div>
+            <div class="row"><hr class="w-50 mx-auto" /></div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <p class="h6 text-white font-weight-bold">Pizza Toppings</p>
+              <div class="col" id="pizzaToppingNameContainer"></div>
+            </div>
+            <div class="col">
+              <div class="col" id="pizzaToppingAmountContainer"></div>
+            </div>
+          </div>
+          <div class="row"><hr class="w-50 mx-auto" /></div>
+
+          <div class="row">
+            <div class="col">
+              <p class="text-white stepOne-size text-start">Grand Total:</p>
+            </div>
+            <div class="col my-auto">
+              <p class="text-white stepOne-price" id="grandtotal"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row"><hr class="w-50 mx-auto" /></div>
+
+        <div class="row flex-wrap mx-5 fixed-bottom mb-3">
+          <button
+            id="backToStep3"
+            class="btn w-auto mx-2 btn-warning text-white font-weight-bolder"
+          >
+            Go Back
+          </button>
+          <button id="loadStart" class="btn w-auto mx-2 text-white btn-light selected">
+            Pay
+          </button>
+        </div>
       </div>
     </section>
 
